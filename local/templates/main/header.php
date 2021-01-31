@@ -36,27 +36,27 @@
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg pt-lg-5 pb-lg-0 navbar-light bg-white" id="navigation">
         <div class="container">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <a class="navbar-brand" href="<?=SITE_DIR;?>">
+            <a class="navbar-brand mx-auto mx-lg-0 me-lg-3" href="<?=SITE_DIR;?>">
                 <svg width="139" height="53">
                     <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/logo.svg#logo"/>
                 </svg>
             </a>
 
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <button type="button" class="btn btn-primary">
                     Магазин
                 </button>
 
                 <div class="input-group ms-4">
-                    <input type="text" class="form-control rounded-0" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <input type="search" class="form-control rounded-0" placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button type="button" class="btn btn-primary rounded-start rounded-pill px-3" id="button-addon2">
                         Найти
                     </button>
@@ -76,3 +76,39 @@
 
         </div>
     </nav>
+
+    <nav class="navbar navbar-expand d-none d-lg-flex pt-0">
+        <div class="container">
+
+            <div class="me-3">
+                <div style="width: 139px"></div>
+            </div>
+            
+            <ul class="navbar-nav w-100 justify-content-between ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-reset ps-0 active" aria-current="page" href="#">Умный дом</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="#">Системы безопасности</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="#">Интернет</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="#">Акции и скидки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="#">Услуги и цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="#">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="#">8-499-444-33-54 (с 8 до 20)</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main class="min-vh-100">
