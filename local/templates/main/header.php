@@ -36,10 +36,10 @@
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <body>
 
-    <nav class="navbar navbar-expand-lg pt-lg-5 pb-lg-0 navbar-light bg-white" id="navigation">
+    <nav class="navbar navbar-expand-lg pt-1 pt-lg-5 pb-lg-0 navbar-light bg-white" id="navigation">
         <div class="container">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -49,10 +49,28 @@
                 </svg>
             </a>
 
+            <button type="button" class="btn ms-auto d-inline-block d-lg-none">
+                <svg width="19" height="20">
+                    <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#search"/>
+                </svg>
+            </button>
+
+            <button type="button" class="btn d-inline-block d-lg-none position-relative">
+                <svg width="20" height="18">
+                    <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#basket"/>
+                </svg>
+                <span class="position-absolute top-0 start-50 badge rounded-pill bg-primary">
+                    <small>12</small>
+                </span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <button type="button" class="btn btn-primary">
-                    Магазин
+                <button type="button" class="btn btn-cyan d-inline-flex align-items-center rounded-0">
+                    <svg width="13" height="13">
+                        <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#menu"/>
+                    </svg>
+                    <span class="ms-1">Магазин</span>
                 </button>
 
                 <div class="input-group ms-4">

@@ -1,11 +1,20 @@
 /* bootstrap */
+*:focus {
+    box-shadow: none !important;
+}
 :root {
     --bs-blue: #1F5FBF;
     --bs-primary: #1F5FBF;
+    --bs-cyan: rgba(31,95,191,.1);
 }
 .btn-primary {
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
+}
+.btn-cyan {
+    border-color: var(--bs-cyan);
+    color: var(--bs-primary);
+    background-color: var(--bs-cyan);
 }
 .text-primary {
     color: var(--bs-primary) !important;
