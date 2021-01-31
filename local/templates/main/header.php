@@ -36,7 +36,7 @@
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <body>
 
-    <nav class="navbar navbar-expand-lg pt-1 pt-lg-5 pb-lg-0 navbar-light bg-white" id="navigation">
+    <header class="navbar navbar-expand-lg pt-1 pt-lg-5 pb-lg-0 navbar-light bg-white" id="navigation">
         <div class="container">
 
             <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,7 +93,7 @@
             </div>
 
         </div>
-    </nav>
+    </header>
 
     <nav class="navbar navbar-expand d-none d-lg-flex pt-0">
         <div class="container">
