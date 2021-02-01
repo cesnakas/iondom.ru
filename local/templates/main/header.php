@@ -104,7 +104,7 @@
             
             <ul class="navbar-nav w-100 justify-content-between ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-reset ps-0 active" aria-current="page" href="#">Умный дом</a>
+                    <a class="nav-link text-reset active" aria-current="page" href="#">Умный дом</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-reset" href="#">Системы безопасности</a>
@@ -122,7 +122,7 @@
                     <a class="nav-link text-reset" href="#">Контакты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-reset" href="#">8-499-444-33-54 (с 8 до 20)</a>
+                    <a class="nav-link text-reset fst-italic" href="#">8-499-444-33-54 (с 8 до 20)</a>
                 </li>
             </ul>
 
