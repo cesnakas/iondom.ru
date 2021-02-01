@@ -66,7 +66,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <button type="button" class="btn btn-cyan d-inline-flex align-items-center rounded-0">
+                <button type="button" class="btn btn-cyan d-inline-flex align-items-center rounded-0" id="btnMenu">
                     <svg width="13" height="13">
                         <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#menu"/>
                     </svg>
@@ -102,7 +102,7 @@
                 <div style="width: 139px"></div>
             </div>
             
-            <ul class="navbar-nav w-100 justify-content-between ms-auto">
+            <ul class="navbar-nav w-100 justify-content-between ms-auto" id="globalNav">
                 <li class="nav-item">
                     <a class="nav-link text-reset active" aria-current="page" href="#">Умный дом</a>
                 </li>
@@ -122,7 +122,13 @@
                     <a class="nav-link text-reset" href="#">Контакты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-reset fst-italic" href="#">8-499-444-33-54 (с 8 до 20)</a>
+                    <a class="nav-link text-reset" href="#">
+                        <svg width="16" height="16" class="me-2">
+                            <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#phone-call"/>
+                        </svg>
+                        8-499-444-33-54
+                        <span class="ms-1">(с 8 до 20)</span>
+                    </a>
                 </li>
             </ul>
 
