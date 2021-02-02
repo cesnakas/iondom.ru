@@ -7,19 +7,12 @@
     $APPLICATION->ShowHead();
     // Bitrix
     use Bitrix\Main\Page\Asset;
-
     // Meta
     Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
-
-    // Bootstrap v4
-    // use Bitrix\Main\UI\Extension;
-    //Extension::load('ui.bootstrap4');
-
     // CSS
     Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css');
     Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.4.1/swiper-bundle.min.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/main.css');
-
     // JS
     Asset::getInstance()->addJs('https://code.jquery.com/jquery-3.5.1.min.js');
     Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js');
@@ -80,7 +73,7 @@
                     </button>
                 </div>
 
-                <button type="button" class="btn ms-3 p-0 position-relative">
+                <a class="btn ms-3 p-0 position-relative" href="<?=SITE_DIR?>basket/" role="button">
                     <svg width="25" height="22">
                         <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#basket"/>
                     </svg>
@@ -88,7 +81,7 @@
                     <span class="position-absolute top-0 start-50 badge rounded-pill bg-primary">
                         <small>12</small>
                     </span>
-                </button>
+                </a>
 
             </div>
 
@@ -97,10 +90,6 @@
 
     <nav class="navbar navbar-expand d-none d-lg-flex pt-0">
         <div class="container">
-
-            <div class="me-3">
-                <div style="width: 139px"></div>
-            </div>
 
             <?$APPLICATION->IncludeComponent(
                 "bitrix:menu",
