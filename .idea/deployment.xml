@@ -2,6 +2,16 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="Always" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="iondom.tmweb.ru" createEmptyFolders="true" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="94.253.15.248">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
       <paths name="iondom.tmweb.ru">
         <serverdata>
           <mappings>
