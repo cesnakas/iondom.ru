@@ -2,11 +2,15 @@
 
     </main>
 
-    <footer class="py-5 bg-primary" role="contentinfo">
+    <footer class="mt-5 py-5 bg-primary" role="contentinfo">
         <div class="container">
 
             <div class="pb-4">
-                Logo
+                <a href="<?=SITE_DIR?>">
+                    <svg width="120" height="53">
+                        <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/logo.svg#logo-fill"/>
+                    </svg>
+                </a>
             </div>
 
             <div class="row">

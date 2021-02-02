@@ -37,7 +37,7 @@
             </button>
 
             <a class="navbar-brand mx-auto mx-lg-0 me-lg-3" href="<?=SITE_DIR;?>">
-                <svg width="139" height="53">
+                <svg width="120" height="53">
                     <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/logo.svg#logo"/>
                 </svg>
             </a>

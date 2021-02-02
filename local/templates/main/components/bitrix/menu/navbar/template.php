@@ -1,7 +1,7 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
 <div class="me-3">
-    <div style="width: 139px"></div>
+    <div style="width: 120px"></div>
 </div>
 
 <?if (!empty($arResult)):?>
