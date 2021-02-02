@@ -2,10 +2,30 @@
 
     </main>
 
-    <footer class="bg-primary">
+    <footer class="py-5 bg-primary" role="contentinfo">
         <div class="container">
 
-            <div style="height: 383px">Logo</div>
+            <div>
+                Logo
+            </div>
+
+            <div class="row">
+                <div class="col-lg">
+                    <div class="fs-3">Услуги</div>
+                </div>
+                <div class="col-lg">
+                    <div class="fs-3">Товары</div>
+                </div>
+                <div class="col-lg">
+                    <div class="fs-3">Меню</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="fs-3">Наши контакты</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="fs-3">Будьте всегда в курсе</div>
+                </div>
+            </div>
 
         </div>
     </footer>

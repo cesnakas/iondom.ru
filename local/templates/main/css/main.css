@@ -45,3 +45,13 @@ body {
     font-weight: 500;
     letter-spacing: .01em;
 }
+
+/* footer */
+footer {
+    color: var(--bs-white);
+    font-size: 14px;
+}
+footer .fs-3 {
+    font-weight: 500;
+    letter-spacing: -.015em;
+}
