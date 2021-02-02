@@ -1,0 +1,16 @@
+#globalNav {
+    font-size: 15px;
+    letter-spacing: .015em;
+    line-height: 18px;
+}
+#globalNav li:last-child a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: .01em;
+}
+#globalNav li:last-child a span {
+    font-weight: 300;
+}

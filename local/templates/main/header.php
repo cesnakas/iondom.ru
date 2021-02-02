@@ -101,36 +101,24 @@
             <div class="me-3">
                 <div style="width: 139px"></div>
             </div>
-            
-            <ul class="navbar-nav w-100 justify-content-between ms-auto" id="globalNav">
-                <li class="nav-item">
-                    <a class="nav-link text-reset active" aria-current="page" href="#">Умный дом</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-reset" href="#">Системы безопасности</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-reset" href="#">Интернет</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-reset" href="#">Акции и скидки</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-reset" href="#">Услуги и цены</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-reset" href="#">Контакты</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-reset" href="#">
-                        <svg width="16" height="16" class="me-2">
-                            <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#phone-call"/>
-                        </svg>
-                        8-499-444-33-54
-                        <span class="ms-1">(с 8 до 20)</span>
-                    </a>
-                </li>
-            </ul>
+
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "navbar",
+                Array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "top",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "1",
+                    "MENU_CACHE_GET_VARS" => array(""),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "A",
+                    "MENU_CACHE_USE_GROUPS" => "Y",
+                    "MENU_THEME" => "site",
+                    "ROOT_MENU_TYPE" => "top",
+                    "USE_EXT" => "N"
+                )
+            );?>
 
         </div>
     </nav>
