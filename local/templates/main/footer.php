@@ -64,22 +64,22 @@
                     </div>
                     <hr>
                     <div class="list-group list-group-horizontal">
-                        <a class="list-group-item" href="#">
+                        <a class="list-group-item" target="_blank" href="http://instagram.com">
                             <svg width="30" height="30">
                                 <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#instagram"/>
                             </svg>
                         </a>
-                        <a class="list-group-item" href="#">
+                        <a class="list-group-item" target="_blank" href="https://t.me/">
                             <svg width="30" height="30">
                                 <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#telegram"/>
                             </svg>
                         </a>
-                        <a class="list-group-item" href="#">
+                        <a class="list-group-item" target="_blank" href="https://wa.me">
                             <svg width="30" height="30">
                                 <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#whatsapp"/>
                             </svg>
                         </a>
-                        <a class="list-group-item" href="#">
+                        <a class="list-group-item" target="_blank" href="https://vk.com">
                             <svg width="30" height="30">
                                 <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#vk"/>
                             </svg>

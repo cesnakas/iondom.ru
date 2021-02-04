@@ -55,7 +55,7 @@ $APPLICATION->SetTitle("ИонДом");
         </div>
     </section>
 
-    <section class="mb-5">
+    <section class="mb-5" id="about-company">
         <div class="container">
             <h3 class="mb-5 pt-5 text-center">О компании</h3>
         </div>
@@ -63,14 +63,16 @@ $APPLICATION->SetTitle("ИонДом");
         <div class="position-relative">
             <img class="img-fluid" src="/images/about/story.png" alt="...">
             <div class="card-img-overlay p-0">
-                <div class="container d-flex h-100">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 d-flex flex-column justify-content-center">
+                        <div class="col-lg-6">
 
-                            <h4 class="mb-4">История компании</h4>
-                            <p>Мебельная фабрика “Роникон” была создана в 2000 году. За годы своего существования она стала одной из ведущих производственных фирм в своей сфере.</p>
-                            <p>На сегодняшний день фабрика мебели “Роникон” имеет 1500 точек реализации своей продукции на всей территории РФ, в числе которых 300 розничных магазинов.</p>
-                            <p>Только в столице работают 111 салонов компании. Площадь территории фабрики - 50 000м2.</p>
+                            <div class="w-75 m-auto py-5">
+                                <h4 class="mb-4">История компании</h4>
+                                <p>Мебельная фабрика “Роникон” была создана в 2000 году. За годы своего существования она стала одной из ведущих производственных фирм в своей сфере.</p>
+                                <p>На сегодняшний день фабрика мебели “Роникон” имеет 1500 точек реализации своей продукции на всей территории РФ, в числе которых 300 розничных магазинов.</p>
+                                <p>Только в столице работают 111 салонов компании. Площадь территории фабрики - 50 000м2.</p>
+                            </div>
 
                         </div>
                     </div>
@@ -78,13 +80,39 @@ $APPLICATION->SetTitle("ИонДом");
             </div>
         </div>
 
-        <div class="container">
+        <div class="container _d-flex _flex-column _justify-content-center">
             <div class="row">
-                <div class="col">
+                <div class="col d-flex flex-column justify-content-center align-items-center" style="height: 465px;">
                     <img src="/images/about/mission.png" alt="..." style="width: 485px;">
                 </div>
-                <div class="col">
-                    <h4 class="text-center">Наша миссия</h4>
+                <div class="col d-flex flex-column justify-content-center align-items-center" style="height: 465px;">
+                    <div class="w-75">
+                        <h4>Наша миссия</h4>
+                        <p>Мебельная фабрика “Роникон” была создана в 2000 году. За годы своего существования она стала одной из ведущих производственных фирм в своей сфере.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-relative">
+            <img class="img-fluid" src="/images/about/bg-services.png" alt="...">
+            <div class="card-img-overlay p-0">
+                <div class="container d-flex h-100">
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+
+                            <div class="w-75 text-white">
+                                <h4 class="mb-4">Продукт и сервис</h4>
+                                <p>Мебельная фабрика “Роникон” была создана в 2000 году. За годы своего существования она стала одной из ведущих производственных фирм в своей сфере.</p>
+                                <p>На сегодняшний день фабрика мебели “Роникон” имеет 1500 точек реализации своей продукции на всей территории РФ, в числе которых 300 розничных магазинов.</p>
+                                <p>Только в столице работают 111 салонов компании. Площадь территории фабрики - 50 000м2. </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                            <img class="w-75" src="/images/about/product.png" alt="..."">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
