@@ -208,6 +208,153 @@ $APPLICATION->SetTitle("ИонДом");
         </div>
     </section>
 
+    <section class="pb-5" style="background-color: var(--bs-cyan)">
+        <div class="container">
+            <h3 class="pt-5">Блог</h3>
+            <div class="row">
+
+                <div class="col">
+                    <div class="card border-0 rounded-0 shadow">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/blog/blog_01.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Название статьи</h5>
+                            <p class="card-text">Система по управлению отоплением, а также Система по управлению вентиляцией.</p>
+                            <a href="#" class="btn btn-outline-primary px-5">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0 rounded-0 shadow">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/blog/blog_02.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Название статьи</h5>
+                            <p class="card-text">Система по управлению отоплением, а также Система по управлению вентиляцией.</p>
+                            <a href="#" class="btn btn-outline-primary px-5">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0 rounded-0 shadow">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/blog/blog_03.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Название статьи</h5>
+                            <p class="card-text">Система по управлению отоплением, а также Система по управлению вентиляцией.</p>
+                            <a href="#" class="btn btn-outline-primary px-5">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0 rounded-0 shadow">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/blog/blog_04.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Название статьи</h5>
+                            <p class="card-text">Система по управлению отоплением, а также Система по управлению вентиляцией.</p>
+                            <a href="#" class="btn btn-outline-primary px-5">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5 py-5" style="background-color: rgba(228,241,255,.21);">
+        <div class="container">
+            <h3 class="py-5 text-center">Наши партнеры</h3>
+            <div class="row align-items-center">
+
+                <div class="col-6 col-lg">
+                    <img class="img-fluid mb-3" src="/local/templates/main/img/partners/hikvision.png" alt="">
+                </div>
+
+                <div class="col-6 col-lg">
+                    <img class="img-fluid mb-3" src="/local/templates/main/img/partners/dssl.png" alt="">
+                </div>
+
+                <div class="col-6 col-lg">
+                    <img class="img-fluid mb-3" src="/local/templates/main/img/partners/beget.png" alt="">
+                </div>
+
+                <div class="col-6 col-lg">
+                    <img class="img-fluid mb-3" src="/local/templates/main/img/partners/space-technology.png" alt="">
+                </div>
+
+                <div class="col-6 col-lg">
+                    <img class="img-fluid mb-3" src="/local/templates/main/img/partners/mango-office.png" alt="">
+                </div>
+
+                <div class="col-6 col-lg">
+                    <img class="img-fluid mb-3" src="/local/templates/main/img/partners/mikrotik.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-5">
+        <div class="container">
+
+            <h3 class="pt-5">Выполненные работы</h3>
+            <div class="row">
+
+                <div class="col">
+                    <div class="card border-0 rounded-0 shadow">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/work/work_01.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Название статьи</h5>
+                            <p class="card-text">Система по управлению отоплением, а также Система по управлению вентиляцией.</p>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn btn-outline-primary px-5">Читать далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0 rounded-0 shadow">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/work/work_02.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Название статьи</h5>
+                            <p class="card-text">Система по управлению отоплением, а также Система по управлению вентиляцией.</p>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn btn-outline-primary px-5">Читать далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0 rounded-0 shadow">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/work/work_03.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Название статьи</h5>
+                            <p class="card-text">Система по управлению отоплением, а также Система по управлению вентиляцией.</p>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn btn-outline-primary px-5">Читать далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0 rounded-0 shadow">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/work/work_04.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Название статьи</h5>
+                            <p class="card-text">Система по управлению отоплением, а также Система по управлению вентиляцией.</p>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn btn-outline-primary px-5">Читать далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
 ?>
