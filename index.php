@@ -107,7 +107,7 @@ $APPLICATION->SetTitle("ИонДом");
                 class="img-fluid card-img-overlay p-0 w-100 rounded-0"
                 src="/images/about/bg-services.png"
                 alt="..."
-                style="z-index: -1; height: 100%; object-fit: cover; object-position: center;"
+                style="z-index: -1; height: 100%; object-fit: cover; object-position: bottom;"
             />
             <div class="container">
                 <div class="row">
@@ -133,6 +133,26 @@ $APPLICATION->SetTitle("ИонДом");
 
         </div>
 
+    </section>
+
+    <section class="mb-5">
+        <div class="container">
+            <h3 class="mb-5 pt-5 text-center">Наши преимущества</h3>
+            <div class="row">
+                <div class="col-lg">
+                    Иновации
+                </div>
+                <div class="col-lg">
+                    Прозрачность
+                </div>
+                <div class="col-lg">
+                    Качество
+                </div>
+                <div class="col-lg">
+                    Равноправность
+                </div>
+            </div>
+        </div>
     </section>
 
 <?
