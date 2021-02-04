@@ -54,6 +54,14 @@ body {
     font-size: 13px;
     letter-spacing: .015em;
 }
+/* advantages */
+#advantages h3 {
+    font-size: 35px;
+}
+#advantages .card-title {
+    color: #193446;
+    letter-spacing: .015em;
+}
 
 /* footer */
 footer {

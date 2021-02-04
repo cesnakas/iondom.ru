@@ -135,22 +135,75 @@ $APPLICATION->SetTitle("ИонДом");
 
     </section>
 
-    <section class="mb-5">
+    <section class="mb-5" id="advantages">
         <div class="container">
             <h3 class="mb-5 pt-5 text-center">Наши преимущества</h3>
-            <div class="row">
-                <div class="col-lg">
-                    Иновации
+            <div class="row justify-content-center">
+
+                <div class="col-6 col-lg-2">
+                    <figure class="card align-items-center border-0">
+                        <div class="rounded-circle" style="padding: 19px; border: 2px solid #224156; background-color: #F5F9FF;">
+                            <img
+                                class="card-img-top"
+                                src="<?=SITE_TEMPLATE_PATH;?>/img/advantages/innovation.png"
+                                alt="..."
+                                style="max-width: 58px;"
+                            />
+                        </div>
+                        <figcaption class="card-body text-center">
+                            <h5 class="card-title fs-6">Иновации</h5>
+                        </figcaption>
+                    </figure>
                 </div>
-                <div class="col-lg">
-                    Прозрачность
+
+                <div class="col-6 col-lg-2">
+                    <figure class="card align-items-center border-0">
+                        <div class="rounded-circle" style="padding: 16px; border: 2px solid #224156; background-color: #F5F9FF;">
+                            <img
+                                class="card-img-top"
+                                src="<?=SITE_TEMPLATE_PATH;?>/img/advantages/transparency.png"
+                                alt="..."
+                                style="max-width: 64px;"
+                            />
+                        </div>
+                        <figcaption class="card-body text-center">
+                            <h5 class="card-title fs-6">Прозрачность</h5>
+                        </figcaption>
+                    </figure>
                 </div>
-                <div class="col-lg">
-                    Качество
+
+                <div class="col-6 col-lg-2">
+                    <figure class="card align-items-center border-0">
+                        <div class="rounded-circle" style="padding: 14px; border: 2px solid #224156; background-color: #F5F9FF;">
+                            <img
+                                class="card-img-top"
+                                src="<?=SITE_TEMPLATE_PATH;?>/img/advantages/quality.png"
+                                alt="..."
+                                style="max-width: 68px;"
+                            />
+                        </div>
+                        <figcaption class="card-body text-center">
+                            <h5 class="card-title fs-6">Качество</h5>
+                        </figcaption>
+                    </figure>
                 </div>
-                <div class="col-lg">
-                    Равноправность
+
+                <div class="col-6 col-lg-2">
+                    <figure class="card align-items-center border-0">
+                        <div class="rounded-circle" style="padding: 14.5px; border: 2px solid #224156; background-color: #F5F9FF;">
+                            <img
+                                class="card-img-top"
+                                src="<?=SITE_TEMPLATE_PATH;?>/img/advantages/cooperation.png"
+                                alt="..."
+                                style="max-width: 67px;"
+                            />
+                        </div>
+                        <figcaption class="card-body text-center">
+                            <h5 class="card-title fs-6">Равноправность</h5>
+                        </figcaption>
+                    </figure>
                 </div>
+
             </div>
         </div>
     </section>
