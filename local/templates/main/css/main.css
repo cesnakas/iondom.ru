@@ -47,7 +47,13 @@ body {
 }
 
 /* about company */
-
+#about-company h4 {
+    font-size: 2rem;
+}
+#about-company p {
+    font-size: 13px;
+    letter-spacing: .015em;
+}
 
 /* footer */
 footer {
