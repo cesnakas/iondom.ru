@@ -9,7 +9,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Системы безопасности",
-		"about/delivery/", 
+		"security-systems/",
 		Array(), 
 		Array(), 
 		"" 

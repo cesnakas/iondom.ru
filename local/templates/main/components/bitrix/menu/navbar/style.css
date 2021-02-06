@@ -14,3 +14,6 @@
 #globalNav li:last-child a span {
     font-weight: 300;
 }
+#globalNav .nav-link.active {
+    color: var(--bs-blue) !important;
+}
