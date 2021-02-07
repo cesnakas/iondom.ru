@@ -8,8 +8,9 @@
     --bs-blue: #1F5FBF;
     --bs-primary: #1F5FBF;
     --bs-orange: #E97D27;
+    --bs-green: #1FBF4C;
     --bs-cyan: rgba(31,95,191,.1);
-    --bs-info: rgba(31,95,191,.1);
+    --bs-cyan-2: rgba(31,95,191,.2);
     --bs-font-sans-serif: 'Roboto', sans-serif;
 }
 body {
