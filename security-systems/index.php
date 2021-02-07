@@ -223,22 +223,40 @@ $APPLICATION->SetTitle("Системы безопасности");
                 видеонаблюдения под ключ в <span class="text-muted text-decoration-underline">Москве и МО</span>
             </h3>
 
-            <div class="card mb-5 w-75 border-0 shadow">
-                <div class="p-5">
-                    <h5 class="mb-3">Сервисы</h5>
+            <div class="row g-3 w-75 mb-5">
 
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="mb-3">Сервисы</h5>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="mb-3">Особенности</h5>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="mb-3">Камеры</h5>
+                        </div>
+                    </div>
                 </div>
-                <hr>
-                <div class="p-5">
-                    <h5 class="mb-3">Особенности</h5>
 
-                </div>
-                <hr>
-                <div class="p-5">
-                    <h5 class="mb-3">Камеры</h5>
-
-                </div>
             </div>
+
+            <!--<div class="card mb-5 w-75 border-0 shadow">
+                <div class="p-5">
+
+
+                </div>
+                <hr>
+                <div class="p-5">
+
+
+                </div>
+                <hr>
+                <div class="p-5">
+
+
+                </div>
+            </div>-->
 
             <div class="row row-cols-lg-3 w-75">
 
@@ -340,7 +358,7 @@ $APPLICATION->SetTitle("Системы безопасности");
                         <button class="btn btn-link px-4 text-muted" type="button">Подробнее</button>
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
