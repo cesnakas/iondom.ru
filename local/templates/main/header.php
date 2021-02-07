@@ -29,7 +29,7 @@
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <body>
 
-    <header class="navbar navbar-expand-lg pt-1 pt-lg-5 pb-lg-0 navbar-light bg-white" id="navigation">
+    <header class="navbar navbar-expand-lg pt-1 pt-lg-5 pb-lg-0 navbar-light bg-white" id="header">
         <div class="container">
 
             <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,6 +42,7 @@
                 </svg>
             </a>
 
+            <!-- mobile btn -->
             <button type="button" class="btn ms-auto d-inline-block d-lg-none">
                 <svg width="19" height="20">
                     <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#search"/>
@@ -56,6 +57,7 @@
                     <small>12</small>
                 </span>
             </button>
+            <!-- /mobile btn -->
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -109,6 +111,28 @@
                 )
             );?>
 
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand">
+        <div class="container">
+            <ul class="navbar-nav w-100 mx-auto justify-content-center" id="subMenu">
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="/about/howto/">Системы видеонаблюдения</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="/security-systems/">СКУД Домофон Шлагбаум</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="/about/">Системы охранной сигнализации</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="/about/guaranty/">Системы пожарной безопасности</a>
+                </li>
+            </ul>
         </div>
     </nav>
 

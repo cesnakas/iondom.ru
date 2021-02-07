@@ -7,7 +7,9 @@
 :root {
     --bs-blue: #1F5FBF;
     --bs-primary: #1F5FBF;
+    --bs-orange: #E97D27;
     --bs-cyan: rgba(31,95,191,.1);
+    --bs-info: rgba(31,95,191,.1);
     --bs-font-sans-serif: 'Roboto', sans-serif;
 }
 body {
@@ -22,6 +24,11 @@ body {
     color: var(--bs-primary);
     background-color: var(--bs-cyan);
 }
+.btn-orange {
+    border-color: var(--bs-orange);
+    color: var(--bs-white);
+    background-color: var(--bs-orange);
+}
 .text-primary {
     color: var(--bs-primary) !important;
 }
@@ -30,7 +37,7 @@ body {
 }
 
 /* navigation */
-#navigation:before {
+#header:before {
     content: '';
     position: absolute;
     top: 0;
@@ -43,6 +50,16 @@ body {
 #btnMenu {
     font-size: 15px;
     font-weight: 500;
+    letter-spacing: .01em;
+}
+/* submenu */
+#subMenu .nav-item {
+    /*width: min-content;*/
+    max-width: 170px;
+    text-align: center;
+}
+#subMenu .nav-link {
+    font-size: 13px;
     letter-spacing: .01em;
 }
 
