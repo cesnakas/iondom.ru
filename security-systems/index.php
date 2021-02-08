@@ -223,19 +223,150 @@ $APPLICATION->SetTitle("Системы безопасности");
                 видеонаблюдения под ключ в <span class="text-muted text-decoration-underline">Москве и МО</span>
             </h3>
 
-            <div class="row g-3 w-75 mb-5">
+            <div class="row mb-5">
 
-                <div class="col">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <h5 class="mb-3">Сервисы</h5>
+                <div class="col-lg-9">
+                    <div class="card border-0 shadow">
+
+                        <div class="card-body px-5 pt-5 pb-4" id="formOrange">
+                            <h5 class="mb-3" style="color: var(--bs-orange);">Сервисы</h5>
+                            <div class="row">
+
+                                <div class="col-lg">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+                                        <label class="form-check-label" for="flexCheckChecked1">
+                                            Установка и монтаж
+                                        </label>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <input type="radio" class="btn-check" name="btnradio" id="option1" autocomplete="off" checked>
+                                        <label class="btn btn-outline-light" for="option1">Простой</label>
+                                        /
+                                        <input type="radio" class="btn-check" name="btnradio" id="option2" autocomplete="off">
+                                        <label class="btn btn-outline-light" for="option2">Сложный</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+                                        <label class="form-check-label" for="flexCheckChecked2">
+                                            Сервис Starthelp
+                                        </label>
+                                    </div>
+                                    <small class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+                                        <label class="form-check-label" for="flexCheckChecked3">
+                                            Хочу его в подарок
+                                        </label>
+                                    </small>
+                                </div>
+
+                                <div class="col-lg">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+                                        <label class="form-check-label" for="flexCheckChecked4">
+                                            Комплект самостоятельной установки
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="mb-3">Особенности</h5>
+
+                        <hr class="m-0">
+
+                        <div class="card-body px-5 pt-5 pb-4" id="formGreen">
+                            <h5 class="mb-3" style="color: var(--bs-green);">Особенности</h5>
+                            <div class="row">
+
+                                <div class="col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="inputState" class="form-label">Тип обьекта</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Тип обьекта</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputState" class="form-label visually-hidden">Тип обьекта</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>IP + A</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg offset-lg-1">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5">
+                                        <label class="form-check-label" for="flexCheckChecked5">
+                                            Удаленный просмотр на Смартфоне/планшете/ПК
+                                        </label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="me-lg-2">Интернет на обьекте установлен:</span>
+                                        <input type="radio" class="btn-check" name="btnradio2" id="option_1" autocomplete="off" checked>
+                                        <label class="btn btn-outline-light" for="option_1">Да</label>
+                                        /
+                                        <input type="radio" class="btn-check" name="btnradio2" id="option_2" autocomplete="off">
+                                        <label class="btn btn-outline-light" for="option_2">Нет</label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="me-lg-2">Облачное хранение:</span>
+                                        <input type="radio" class="btn-check" name="btnradio3" id="option_yes" autocomplete="off" checked>
+                                        <label class="btn btn-outline-light" for="option_yes">Да</label>
+                                        /
+                                        <input type="radio" class="btn-check" name="btnradio3" id="option_no" autocomplete="off">
+                                        <label class="btn btn-outline-light" for="option_no">Нет</label>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="mb-3">Камеры</h5>
+
+                        <hr class="m-0">
+
+                        <div class="card-body px-5 pt-5 pb-4" id="formPurple">
+                            <h5 class="mb-3" style="color: var(--bs-purple);">Камеры</h5>
+                            <div class="row">
+
+                                <div class="col-lg-4">
+                                    <div class="mb-3">
+                                        <span class="me-lg-2">Качество камеры:</span>
+                                        <input type="radio" class="btn-check" name="hdCam" id="cam_hd" autocomplete="off" checked>
+                                        <label class="btn btn-outline-light" for="cam_hd">Full HD</label>
+                                        /
+                                        <input type="radio" class="btn-check" name="hdCam" id="cam_3k" autocomplete="off">
+                                        <label class="btn btn-outline-light" for="cam_3k">3K</label>
+                                        /
+                                        <input type="radio" class="btn-check" name="hdCam" id="cam_5k" autocomplete="off">
+                                        <label class="btn btn-outline-light" for="cam_5k">5K</label>
+                                    </div>
+                                    <div class="d-lg-flex mb-3">
+                                        <label for="validationCustom01" class="form-label">Кол-во дней записи:</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="12">
+                                    </div>
+
+                                </div>
+
+                                <div class="col offset-lg-1">
+                                    <div class="mb-3">
+                                        <span class="me-lg-2">Тип подключения:</span>
+                                        <input type="radio" class="btn-check" name="eNet" id="net_1" autocomplete="off" checked>
+                                        <label class="btn btn-outline-light" for="net_1">Проводное</label>
+                                        /
+                                        <input type="radio" class="btn-check" name="eNet" id="net_2" autocomplete="off">
+                                        <label class="btn btn-outline-light" for="net_2">Беспроводное</label>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -258,9 +389,9 @@ $APPLICATION->SetTitle("Системы безопасности");
                 </div>
             </div>-->
 
-            <div class="row row-cols-lg-3 w-75">
+            <div class="row">
 
-                <div class="col">
+                <div class="col-lg-3">
                     <div class="fs-6 mb-3">Комплект Стандарт на 18 камер</div>
                     <div class="card mb-4 border-0 shadow">
                         <img src="/local/templates/main/img/demo/bg-form.png" class="card-img-top" alt="...">
@@ -293,7 +424,7 @@ $APPLICATION->SetTitle("Системы безопасности");
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-lg-3">
                     <div class="fs-6 mb-3">Комплект Стандарт на 18 камер</div>
                     <div class="card mb-4 border-0 shadow">
                         <img src="/local/templates/main/img/demo/bg-form.png" class="card-img-top" alt="...">
@@ -326,7 +457,7 @@ $APPLICATION->SetTitle("Системы безопасности");
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-lg-3">
                     <div class="fs-6 mb-3">Комплект Стандарт на 18 камер</div>
                     <div class="card mb-4 border-0 shadow">
                         <img src="/local/templates/main/img/demo/bg-form.png" class="card-img-top" alt="...">

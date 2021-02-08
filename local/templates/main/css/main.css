@@ -7,6 +7,7 @@
 :root {
     --bs-blue: #1F5FBF;
     --bs-primary: #1F5FBF;
+    --bs-purple: #6F1FBF;
     --bs-orange: #E97D27;
     --bs-green: #1FBF4C;
     --bs-cyan: rgba(31,95,191,.1);
@@ -79,6 +80,45 @@ body {
 #advantages .card-title {
     color: #193446;
     letter-spacing: .015em;
+}
+
+/* form */
+
+#formOrange .btn-check + .btn-outline-light,
+#formGreen .btn-check + .btn-outline-light,
+#formPurple .btn-check + .btn-outline-light {
+    padding: 0;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+}
+#formOrange .btn-check:checked + .btn-outline-light,
+#formGreen .btn-check:checked + .btn-outline-light,
+#formPurple .btn-check:checked + .btn-outline-light {
+    border: none;
+    font-weight: bold;
+    background-color: transparent;
+    box-shadow: none;
+}
+/* form orange */
+#formOrange .form-check-input:checked {
+     border-color: var(--bs-orange);
+     background-color: var(--bs-orange);
+}
+#formOrange .btn-check:checked + .btn-outline-light {
+    color: var(--bs-orange);
+}
+/* form green */
+#formGreen .form-check-input:checked {
+    border-color: var(--bs-green);
+    background-color: var(--bs-green);
+}
+#formGreen .btn-check:checked + .btn-outline-light {
+    color: var(--bs-green);
+}
+/* form purple */
+#formPurple .btn-check:checked + .btn-outline-light {
+    color: var(--bs-purple);
 }
 
 /* footer */
