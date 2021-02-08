@@ -83,7 +83,6 @@ body {
 }
 
 /* form */
-
 #formOrange .btn-check + .btn-outline-light,
 #formGreen .btn-check + .btn-outline-light,
 #formPurple .btn-check + .btn-outline-light {
@@ -119,6 +118,18 @@ body {
 /* form purple */
 #formPurple .btn-check:checked + .btn-outline-light {
     color: var(--bs-purple);
+}
+#formPurple input[type="number"] {
+    width: 4.5rem;
+    padding: 0 .75rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: var(--bs-purple);
+    border-radius: 0;
+    color: var(--bs-purple);
+    font-weight: bold;
+    text-align: end;
 }
 
 /* footer */

@@ -224,7 +224,6 @@ $APPLICATION->SetTitle("Системы безопасности");
             </h3>
 
             <div class="row mb-5">
-
                 <div class="col-lg-9">
                     <div class="card border-0 shadow">
 
@@ -346,14 +345,56 @@ $APPLICATION->SetTitle("Системы безопасности");
                                         <input type="radio" class="btn-check" name="hdCam" id="cam_5k" autocomplete="off">
                                         <label class="btn btn-outline-light" for="cam_5k">5K</label>
                                     </div>
-                                    <div class="d-lg-flex mb-3">
-                                        <label for="validationCustom01" class="form-label">Кол-во дней записи:</label>
-                                        <input type="text" class="form-control" id="validationCustom01" value="12">
+                                    <!--//-->
+                                    <div class="d-lg-flex align-items-baseline mb-3">
+                                        <label for="validationCustom011" class="form-label">Кол-во дней записи:</label>
+                                        <input
+                                            type="number"
+                                            class="form-control ms-2"
+                                            id="validationCustom011"
+                                            min="0"
+                                            max="100"
+                                            placeholder="12"
+                                        />
                                     </div>
-
+                                    <!--//-->
+                                    <div class="d-lg-flex align-items-baseline mb-3">
+                                        <label for="validationCustom012" class="form-label">Кол-во микрофонов:</label>
+                                        <input
+                                            type="number"
+                                            class="form-control ms-2"
+                                            id="validationCustom012"
+                                            min="0"
+                                            max="100"
+                                            placeholder="12"
+                                        />
+                                    </div>
                                 </div>
 
                                 <div class="col offset-lg-1">
+                                    <div class="d-lg-flex align-items-baseline mb-3">
+                                        <label for="validationCustom018" class="form-label">Кол-во камер:</label>
+                                        <small class="ms-2">Внутренних</small>
+                                        <input
+                                            type="number"
+                                            class="form-control mx-2"
+                                            id="validationCustom018"
+                                            min="0"
+                                            max="100"
+                                            placeholder="12"
+                                        />
+                                        /
+                                        <small class="ms-2">Внешних</small>
+                                        <input
+                                            type="number"
+                                            class="form-control ms-2"
+                                            id="validationCustom018"
+                                            min="0"
+                                            max="100"
+                                            placeholder="12"
+                                        />
+                                    </div>
+                                    <!--//-->
                                     <div class="mb-3">
                                         <span class="me-lg-2">Тип подключения:</span>
                                         <input type="radio" class="btn-check" name="eNet" id="net_1" autocomplete="off" checked>
@@ -369,127 +410,123 @@ $APPLICATION->SetTitle("Системы безопасности");
 
                     </div>
                 </div>
+            </div>
+
+            <div class="row mb-5">
+
+                <div class="col-lg-3">
+                    <div class="fs-6 mb-3">Комплект Стандарт на 18 камер</div>
+                    <div class="card mb-4 border-0 shadow">
+                        <img src="/local/templates/main/img/demo/bg-form.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: var(--bs-green);">Состав системы</h5>
+                        </div>
+                        <ul class="_list-group list-group-flush">
+                            <li class="_list-group-item">Детектор движения</li>
+                            <li class="_list-group-item">Удаленный просмотр</li>
+                            <li class="_list-group-item">Запись звука</li>
+                            <li class="_list-group-item">Умная ИК-подсветка</li>
+                            <li class="_list-group-item">Ночная сьемка</li>
+                            <li class="_list-group-item">Уличное</li>
+                        </ul>
+                        <hr class="m-0">
+                        <div class="card-body">
+                            <div class="d-grid gap-2 d-lg-flex justify-content-between">
+                                <div>Комплект</div>
+                                <div>19 000 ₽</div>
+                            </div>
+                            <div class="d-grid gap-2 d-lg-flex justify-content-between" style="color: var(--bs-orange);">
+                                <small>Сервис</small>
+                                <small>9 999 ₽</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 d-lg-flex">
+                        <button class="btn btn-primary px-4" type="button">Приобрести</button>
+                        <button class="btn btn-link px-4 text-muted" type="button">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="fs-6 mb-3">Комплект Стандарт на 18 камер</div>
+                    <div class="card mb-4 border-0 shadow">
+                        <img src="/local/templates/main/img/demo/bg-form.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: var(--bs-green);">Состав системы</h5>
+                        </div>
+                        <ul class="_list-group list-group-flush">
+                            <li class="_list-group-item">Детектор движения</li>
+                            <li class="_list-group-item">Удаленный просмотр</li>
+                            <li class="_list-group-item">Запись звука</li>
+                            <li class="_list-group-item">Умная ИК-подсветка</li>
+                            <li class="_list-group-item">Ночная сьемка</li>
+                            <li class="_list-group-item">Уличное</li>
+                        </ul>
+                        <hr class="m-0">
+                        <div class="card-body">
+                            <div class="d-grid gap-2 d-lg-flex justify-content-between">
+                                <div>Комплект</div>
+                                <div>19 000 ₽</div>
+                            </div>
+                            <div class="d-grid gap-2 d-lg-flex justify-content-between" style="color: var(--bs-orange);">
+                                <small>Сервис</small>
+                                <small>9 999 ₽</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 d-lg-flex">
+                        <button class="btn btn-primary px-4" type="button">Приобрести</button>
+                        <button class="btn btn-link px-4 text-muted" type="button">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="fs-6 mb-3">Комплект Стандарт на 18 камер</div>
+                    <div class="card mb-4 border-0 shadow">
+                        <img src="/local/templates/main/img/demo/bg-form.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: var(--bs-green);">Состав системы</h5>
+                        </div>
+                        <ul class="_list-group list-group-flush">
+                            <li class="_list-group-item">Детектор движения</li>
+                            <li class="_list-group-item">Удаленный просмотр</li>
+                            <li class="_list-group-item">Запись звука</li>
+                            <li class="_list-group-item">Умная ИК-подсветка</li>
+                            <li class="_list-group-item">Ночная сьемка</li>
+                            <li class="_list-group-item">Уличное</li>
+                        </ul>
+                        <hr class="m-0">
+                        <div class="card-body">
+                            <div class="d-grid gap-2 d-lg-flex justify-content-between">
+                                <div>Комплект</div>
+                                <div>19 000 ₽</div>
+                            </div>
+                            <div class="d-grid gap-2 d-lg-flex justify-content-between" style="color: var(--bs-orange);">
+                                <small>Сервис</small>
+                                <small>9 999 ₽</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 d-lg-flex">
+                        <button class="btn btn-primary px-4" type="button">Приобрести</button>
+                        <button class="btn btn-link px-4 text-muted" type="button">Подробнее</button>
+                    </div>
+                </div>
 
             </div>
 
-            <!--<div class="card mb-5 w-75 border-0 shadow">
-                <div class="p-5">
+            <h4 class="fs-3 ms-lg-5 mb-4">Цена монтажа IP видеонаблюдения</h4>
 
+            <div class="row mb-5">
+                <div class="col-lg-9">
+
+                    <div class="card px-5 py-4 border-0 shadow">
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor earum facilis neque porro, quia quibusdam ratione vitae! Officiis, possimus ratione. Consequatur consequuntur dolor doloremque neque nobis odio vero voluptatibus?
+
+                    </div>
 
                 </div>
-                <hr>
-                <div class="p-5">
-
-
-                </div>
-                <hr>
-                <div class="p-5">
-
-
-                </div>
-            </div>-->
-
-            <div class="row">
-
-                <div class="col-lg-3">
-                    <div class="fs-6 mb-3">Комплект Стандарт на 18 камер</div>
-                    <div class="card mb-4 border-0 shadow">
-                        <img src="/local/templates/main/img/demo/bg-form.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: var(--bs-green);">Состав системы</h5>
-                        </div>
-                        <ul class="_list-group list-group-flush">
-                            <li class="_list-group-item">Детектор движения</li>
-                            <li class="_list-group-item">Удаленный просмотр</li>
-                            <li class="_list-group-item">Запись звука</li>
-                            <li class="_list-group-item">Умная ИК-подсветка</li>
-                            <li class="_list-group-item">Ночная сьемка</li>
-                            <li class="_list-group-item">Уличное</li>
-                        </ul>
-                        <hr class="m-0">
-                        <div class="card-body">
-                            <div class="d-grid gap-2 d-lg-flex justify-content-between">
-                                <div>Комплект</div>
-                                <div>19 000 ₽</div>
-                            </div>
-                            <div class="d-grid gap-2 d-lg-flex justify-content-between" style="color: var(--bs-orange);">
-                                <small>Сервис</small>
-                                <small>9 999 ₽</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-grid gap-2 d-lg-flex">
-                        <button class="btn btn-primary px-4" type="button">Приобрести</button>
-                        <button class="btn btn-link px-4 text-muted" type="button">Подробнее</button>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="fs-6 mb-3">Комплект Стандарт на 18 камер</div>
-                    <div class="card mb-4 border-0 shadow">
-                        <img src="/local/templates/main/img/demo/bg-form.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: var(--bs-green);">Состав системы</h5>
-                        </div>
-                        <ul class="_list-group list-group-flush">
-                            <li class="_list-group-item">Детектор движения</li>
-                            <li class="_list-group-item">Удаленный просмотр</li>
-                            <li class="_list-group-item">Запись звука</li>
-                            <li class="_list-group-item">Умная ИК-подсветка</li>
-                            <li class="_list-group-item">Ночная сьемка</li>
-                            <li class="_list-group-item">Уличное</li>
-                        </ul>
-                        <hr class="m-0">
-                        <div class="card-body">
-                            <div class="d-grid gap-2 d-lg-flex justify-content-between">
-                                <div>Комплект</div>
-                                <div>19 000 ₽</div>
-                            </div>
-                            <div class="d-grid gap-2 d-lg-flex justify-content-between" style="color: var(--bs-orange);">
-                                <small>Сервис</small>
-                                <small>9 999 ₽</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-grid gap-2 d-lg-flex">
-                        <button class="btn btn-primary px-4" type="button">Приобрести</button>
-                        <button class="btn btn-link px-4 text-muted" type="button">Подробнее</button>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="fs-6 mb-3">Комплект Стандарт на 18 камер</div>
-                    <div class="card mb-4 border-0 shadow">
-                        <img src="/local/templates/main/img/demo/bg-form.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: var(--bs-green);">Состав системы</h5>
-                        </div>
-                        <ul class="_list-group list-group-flush">
-                            <li class="_list-group-item">Детектор движения</li>
-                            <li class="_list-group-item">Удаленный просмотр</li>
-                            <li class="_list-group-item">Запись звука</li>
-                            <li class="_list-group-item">Умная ИК-подсветка</li>
-                            <li class="_list-group-item">Ночная сьемка</li>
-                            <li class="_list-group-item">Уличное</li>
-                        </ul>
-                        <hr class="m-0">
-                        <div class="card-body">
-                            <div class="d-grid gap-2 d-lg-flex justify-content-between">
-                                <div>Комплект</div>
-                                <div>19 000 ₽</div>
-                            </div>
-                            <div class="d-grid gap-2 d-lg-flex justify-content-between" style="color: var(--bs-orange);">
-                                <small>Сервис</small>
-                                <small>9 999 ₽</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-grid gap-2 d-lg-flex">
-                        <button class="btn btn-primary px-4" type="button">Приобрести</button>
-                        <button class="btn btn-link px-4 text-muted" type="button">Подробнее</button>
-                    </div>
-                </div>
-
             </div>
 
         </div>
