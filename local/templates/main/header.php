@@ -61,31 +61,54 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+                <!-- menu -->
                 <button type="button" class="btn btn-cyan d-inline-flex align-items-center rounded-0" id="btnMenu">
                     <svg width="13" height="13">
                         <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#menu"/>
                     </svg>
                     <span class="ms-1">Магазин</span>
                 </button>
+                <!-- /menu -->
 
+                <!-- search -->
                 <?$APPLICATION->IncludeComponent(
                     "bitrix:search.form",
                     ".default",
                     Array(
                         "USE_SUGGEST" => "N",
-                        "PAGE" => "#SITE_DIR#search/index.php"
+                        "PAGE" => "#SITE_DIR#search/"
                     )
                 );?>
+                <!-- /search -->
 
-                <a class="btn ms-3 p-0 position-relative" href="<?=SITE_DIR?>basket/" role="button">
-                    <svg width="25" height="22">
-                        <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#basket"/>
-                    </svg>
-                    <small class="text-primary">Корзина</small>
-                    <span class="position-absolute top-0 start-50 badge rounded-pill bg-primary">
-                        <small>12</small>
-                    </span>
-                </a>
+                <!-- basket -->
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:sale.basket.basket.line",
+                    "basket",
+                    Array(
+                        "HIDE_ON_BASKET_PAGES" => "N",
+                        "PATH_TO_BASKET" => SITE_DIR."personal/cart/",
+                        "PATH_TO_ORDER" => SITE_DIR."personal/order/make/",
+                        "PATH_TO_PERSONAL" => SITE_DIR."personal/",
+                        "PATH_TO_PROFILE" => SITE_DIR."personal/",
+                        "PATH_TO_REGISTER" => SITE_DIR."login/",
+                        "POSITION_FIXED" => "N",
+                        "POSITION_HORIZONTAL" => "right",
+                        "POSITION_VERTICAL" => "top",
+                        "SHOW_AUTHOR" => "N",
+                        "SHOW_DELAY" => "N",
+                        "SHOW_EMPTY_VALUES" => "N",
+                        "SHOW_IMAGE" => "Y",
+                        "SHOW_NOTAVAIL" => "N",
+                        "SHOW_NUM_PRODUCTS" => "Y",
+                        "SHOW_PERSONAL_LINK" => "N",
+                        "SHOW_PRICE" => "Y",
+                        "SHOW_PRODUCTS" => "N",
+                        "SHOW_SUMMARY" => "Y",
+                        "SHOW_TOTAL_PRICE" => "N"
+                    )
+                );?>
+                <!-- /basket -->
 
             </div>
 
