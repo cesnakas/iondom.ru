@@ -68,12 +68,14 @@
                     <span class="ms-1">Магазин</span>
                 </button>
 
-                <div class="input-group ms-4">
-                    <input type="search" class="form-control rounded-0" placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button type="button" class="btn btn-primary rounded-start rounded-pill px-3" id="button-addon2">
-                        Найти
-                    </button>
-                </div>
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:search.form",
+                    ".default",
+                    Array(
+                        "USE_SUGGEST" => "N",
+                        "PAGE" => "#SITE_DIR#search/index.php"
+                    )
+                );?>
 
                 <a class="btn ms-3 p-0 position-relative" href="<?=SITE_DIR?>basket/" role="button">
                     <svg width="25" height="22">

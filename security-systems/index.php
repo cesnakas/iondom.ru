@@ -521,9 +521,7 @@ $APPLICATION->SetTitle("Системы безопасности");
                 <div class="col-lg-9">
 
                     <div class="card px-5 py-4 border-0 shadow">
-
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor earum facilis neque porro, quia quibusdam ratione vitae! Officiis, possimus ratione. Consequatur consequuntur dolor doloremque neque nobis odio vero voluptatibus?
-
                     </div>
 
                 </div>
