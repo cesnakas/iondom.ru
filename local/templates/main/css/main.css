@@ -92,6 +92,13 @@ body {
 .swiper-slide .img-fluid {
     object-fit: contain;
 }
+@media (max-width: 991.98px) {
+    .swiper-slide .img-fluid {
+        height: 480px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
 
 /* about company */
 #about-company h4 {

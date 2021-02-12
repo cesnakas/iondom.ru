@@ -1,5 +1,6 @@
 // swiper
 var swiper = new Swiper('#homeSlider .swiper-container', {
+    loop: true,
     autoplay: {
         delay: 5500,
         disableOnInteraction: false,

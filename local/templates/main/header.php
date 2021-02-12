@@ -139,7 +139,7 @@
         </div>
     </nav>
 
-    <nav class="navbar navbar-expand">
+    <nav class="navbar navbar-expand d-none">
         <div class="container">
             <ul class="navbar-nav w-100 mx-auto justify-content-center" id="subMenu">
                 <li class="nav-item">

@@ -10,7 +10,7 @@ $APPLICATION->SetTitle("ИонДом");
                 <div class="swiper-slide">
                     <img class="img-fluid" src="/images/slider/slide_01.png" alt="...">
                     <div class="d-flex flex-column justify-content-center card-img-overlay p-0">
-                        <div class="container">
+                        <div class="container text-center text-lg-start">
                             <h3>Уникальное торговое предложение</h3>
                             <p>При помощи систем управления можно контролировать и регулировать каждый источник света в помещении.</p>
                             <button type="button" class="btn btn-primary px-5">Проекты</button>
@@ -21,7 +21,7 @@ $APPLICATION->SetTitle("ИонДом");
                 <div class="swiper-slide">
                     <img class="img-fluid" src="/images/slider/slide_01.png" alt="...">
                     <div class="d-flex flex-column justify-content-center card-img-overlay p-0">
-                        <div class="container">
+                        <div class="container text-center text-lg-start">
                             <h3>Уникальное торговое предложение</h3>
                             <p>При помощи систем управления можно контролировать и регулировать каждый источник света в помещении.</p>
                             <button type="button" class="btn btn-primary px-5">Проекты</button>
@@ -32,7 +32,7 @@ $APPLICATION->SetTitle("ИонДом");
                 <div class="swiper-slide">
                     <img class="img-fluid" src="/images/slider/slide_01.png" alt="...">
                     <div class="d-flex flex-column justify-content-center card-img-overlay p-0">
-                        <div class="container">
+                        <div class="container text-center text-lg-start">
                             <h3>Уникальное торговое предложение</h3>
                             <p>При помощи систем управления можно контролировать и регулировать каждый источник света в помещении.</p>
                             <button type="button" class="btn btn-primary px-5">Проекты</button>
