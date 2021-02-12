@@ -14,7 +14,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $this->setFrameMode(true);
 ?>
 
-<form class="input-group ms-4" action="<?=$arResult["FORM_ACTION"]?>">
+<form class="input-group ms-4 d-none d-lg-flex" action="<?=$arResult["FORM_ACTION"]?>">
     <?if($arParams["USE_SUGGEST"] === "Y"):?>
         <?$APPLICATION->IncludeComponent(
             "bitrix:search.suggest.input",

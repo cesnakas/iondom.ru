@@ -23,7 +23,7 @@ else
 <script>
 var <?=$cartId?> = new BitrixSmallCart;
 </script>
-<div id="<?=$cartId?>" class="<?=$cartStyle?>">
+<div id="<?=$cartId?>" class="d-none d-lg-block <?=$cartStyle?>">
 <?
 	/** @var \Bitrix\Main\Page\FrameBuffered $frame */
 	$frame = $this->createFrame($cartId, false)->begin();
