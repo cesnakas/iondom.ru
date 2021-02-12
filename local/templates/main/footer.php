@@ -13,7 +13,7 @@
                 </a>
             </div>
 
-            <div class="row">
+            <div class="row d-none d-lg-flex">
                 <div class="col-lg">
                     <div class="fs-3 mb-3">Услуги</div>
                     <div class="list-group list-group-flush">
@@ -98,8 +98,81 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- mobile -->
+        <div class="accordion accordion-flush " id="accordionFlushExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Услуги
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" href="#">Услуга 1</a>
+                            <a class="list-group-item list-group-item-action" href="#">Услуга 2</a>
+                            <a class="list-group-item list-group-item-action" href="#">Услуга 3</a>
+                            <a class="list-group-item list-group-item-action" href="#">Услуга 4</a>
+                            <a class="list-group-item list-group-item-action" href="#">Услуга 5</a>
+                            <a class="list-group-item list-group-item-action" href="#">Услуга 6</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Товары
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" href="#">Группа товаров 1</a>
+                            <a class="list-group-item list-group-item-action" href="#">Группа товаров 2</a>
+                            <a class="list-group-item list-group-item-action" href="#">Группа товаров 3</a>
+                            <a class="list-group-item list-group-item-action" href="#">Группа товаров 4</a>
+                            <a class="list-group-item list-group-item-action" href="#">Группа товаров 5</a>
+                            <a class="list-group-item list-group-item-action" href="#">Группа товаров 6</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Меню</button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "footer",
+                            Array(
+                                "ALLOW_MULTI_SELECT" => "N",
+                                "CHILD_MENU_TYPE" => "top",
+                                "DELAY" => "N",
+                                "MAX_LEVEL" => "1",
+                                "MENU_CACHE_GET_VARS" => array(""),
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_TYPE" => "A",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "MENU_THEME" => "site",
+                                "ROOT_MENU_TYPE" => "top",
+                                "USE_EXT" => "N"
+                            )
+                        );?>
+                    </div>
+                </div>
+            </div>
 
         </div>
+        <!-- /mobile -->
+
     </footer>
 
 </body>

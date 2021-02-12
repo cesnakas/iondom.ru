@@ -1,6 +1,6 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
-<div class="fs-3 mb-3">Меню</div>
+<div class="fs-3 mb-3 d-none d-lg-block">Меню</div>
 
 <?if (!empty($arResult)):?>
 <div class="list-group list-group-flush">

@@ -253,3 +253,6 @@ footer .input-group .btn-light {
     padding: 2px 6px;
     background-color: var(--bs-white);
 }
+footer .accordion-button {
+    border: 1px solid rgba(255,255,255,.2);
+}
