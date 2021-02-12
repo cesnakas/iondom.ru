@@ -3,14 +3,49 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("ИонДом");
 ?>
 
-    <section class="position-relative mb-5">
-        <img class="img-fluid" src="/images/slider/slide_01.png" alt="...">
-        <div class="d-flex flex-column justify-content-center card-img-overlay p-0">
-            <div class="container">
-                <h3>Уникальное торговое предложение</h3>
-                <p>При помощи систем управления можно контролировать и регулировать каждый источник света в помещении.</p>
-                <button type="button" class="btn btn-primary px-5">Проекты</button>
+    <section class="position-relative mb-5" id="homeSlider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="/images/slider/slide_01.png" alt="...">
+                    <div class="d-flex flex-column justify-content-center card-img-overlay p-0">
+                        <div class="container">
+                            <h3>Уникальное торговое предложение</h3>
+                            <p>При помощи систем управления можно контролировать и регулировать каждый источник света в помещении.</p>
+                            <button type="button" class="btn btn-primary px-5">Проекты</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="/images/slider/slide_01.png" alt="...">
+                    <div class="d-flex flex-column justify-content-center card-img-overlay p-0">
+                        <div class="container">
+                            <h3>Уникальное торговое предложение</h3>
+                            <p>При помощи систем управления можно контролировать и регулировать каждый источник света в помещении.</p>
+                            <button type="button" class="btn btn-primary px-5">Проекты</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="/images/slider/slide_01.png" alt="...">
+                    <div class="d-flex flex-column justify-content-center card-img-overlay p-0">
+                        <div class="container">
+                            <h3>Уникальное торговое предложение</h3>
+                            <p>При помощи систем управления можно контролировать и регулировать каждый источник света в помещении.</p>
+                            <button type="button" class="btn btn-primary px-5">Проекты</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            <!-- pagination -->
+            <div class="swiper-pagination swiper-pagination-black"></div>
+            <!-- arrows -->
+            <div class="swiper-button-next swiper-button-black"></div>
+            <div class="swiper-button-prev swiper-button-black"></div>
         </div>
     </section>
 
