@@ -16,7 +16,7 @@
     // JS
     Asset::getInstance()->addJs('https://code.jquery.com/jquery-3.5.1.min.js');
     Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js');
-    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js');
+    Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js');
     Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/swiper@6.4.1/swiper-bundle.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/main.js');
 ?>
@@ -29,11 +29,14 @@
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <body>
 
-    <header class="navbar navbar-expand-lg pt-1 pt-lg-5 pb-lg-0 navbar-light bg-white" id="header">
+    <header class="navbar navbar-expand-lg py-0 pt-lg-5 pb-lg-0 navbar-light bg-white" id="header">
         <div class="container">
 
-            <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler me-5" id="navbarMenuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <!--<span class="navbar-toggler-icon"></span>-->
+                <svg width="24" height="17">
+                    <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#menu-btn"/>
+                </svg>
             </button>
 
             <a class="navbar-brand mx-auto mx-lg-0 me-lg-3" href="<?=SITE_DIR;?>">
@@ -59,7 +62,7 @@
             </button>
             <!-- /mobile btn -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarMenu">
 
                 <!-- menu -->
                 <button type="button" class="btn btn-cyan d-inline-flex align-items-center rounded-0" id="btnMenu">

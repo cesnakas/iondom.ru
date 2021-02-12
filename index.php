@@ -44,8 +44,8 @@ $APPLICATION->SetTitle("ИонДом");
             <!-- pagination -->
             <div class="swiper-pagination swiper-pagination-black"></div>
             <!-- arrows -->
-            <div class="swiper-button-next swiper-button-black"></div>
-            <div class="swiper-button-prev swiper-button-black"></div>
+            <div class="swiper-button-next swiper-button-black d-none d-lg-flex"></div>
+            <div class="swiper-button-prev swiper-button-black d-none d-lg-flex"></div>
         </div>
     </section>
 
