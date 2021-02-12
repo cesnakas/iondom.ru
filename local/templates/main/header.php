@@ -10,13 +10,13 @@
     // Meta
     Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
     // CSS
-    Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css');
+    Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
     Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.4.1/swiper-bundle.min.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/main.css');
     // JS
     Asset::getInstance()->addJs('https://code.jquery.com/jquery-3.5.1.min.js');
-    Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js');
-    Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js');
+    Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js');
+    Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js');
     Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/swiper@6.4.1/swiper-bundle.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/main.js');
 ?>
@@ -33,7 +33,6 @@
         <div class="container">
 
             <button class="navbar-toggler me-5" id="navbarMenuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <!--<span class="navbar-toggler-icon"></span>-->
                 <svg width="24" height="17">
                     <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#menu-btn"/>
                 </svg>
@@ -45,22 +44,45 @@
                 </svg>
             </a>
 
-            <!-- mobile btn -->
-            <button type="button" class="btn ms-auto d-inline-block d-lg-none">
-                <svg width="19" height="20">
-                    <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#search"/>
-                </svg>
-            </button>
+            <!-- mobile search -->
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:search.form",
+                "mobile-search",
+                Array(
+                    "USE_SUGGEST" => "N",
+                    "PAGE" => "#SITE_DIR#search/"
+                )
+            );?>
+            <!-- /mobile search -->
 
-            <button type="button" class="btn d-inline-block d-lg-none position-relative">
-                <svg width="20" height="18">
-                    <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#basket"/>
-                </svg>
-                <span class="position-absolute top-0 start-50 badge rounded-pill bg-primary">
-                    <small>12</small>
-                </span>
-            </button>
-            <!-- /mobile btn -->
+            <!-- mobile basket -->
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:sale.basket.basket.line",
+                "mobile-basket",
+                Array(
+                    "HIDE_ON_BASKET_PAGES" => "N",
+                    "PATH_TO_BASKET" => SITE_DIR."personal/cart/",
+                    "PATH_TO_ORDER" => SITE_DIR."personal/order/make/",
+                    "PATH_TO_PERSONAL" => SITE_DIR."personal/",
+                    "PATH_TO_PROFILE" => SITE_DIR."personal/",
+                    "PATH_TO_REGISTER" => SITE_DIR."login/",
+                    "POSITION_FIXED" => "N",
+                    "POSITION_HORIZONTAL" => "right",
+                    "POSITION_VERTICAL" => "top",
+                    "SHOW_AUTHOR" => "N",
+                    "SHOW_DELAY" => "N",
+                    "SHOW_EMPTY_VALUES" => "N",
+                    "SHOW_IMAGE" => "Y",
+                    "SHOW_NOTAVAIL" => "N",
+                    "SHOW_NUM_PRODUCTS" => "Y",
+                    "SHOW_PERSONAL_LINK" => "N",
+                    "SHOW_PRICE" => "Y",
+                    "SHOW_PRODUCTS" => "N",
+                    "SHOW_SUMMARY" => "Y",
+                    "SHOW_TOTAL_PRICE" => "N"
+                )
+            );?>
+            <!-- /mobile basket -->
 
             <div class="collapse navbar-collapse" id="navbarMenu">
 
