@@ -84,13 +84,18 @@ body {
 
 /* submenu */
 #subMenu .nav-item {
-    /*width: min-content;*/
-    max-width: 170px;
+    /*max-width: 170px;*/
     text-align: center;
 }
 #subMenu .nav-link {
+    border-color: transparent;
+    border-radius: 0;
     font-size: 13px;
     letter-spacing: .01em;
+}
+#subMenu .nav-link.active {
+    color: var(--bs-white);
+    background-color: var(--bs-primary);
 }
 
 /* swiper */
@@ -269,11 +274,17 @@ footer .input-group .btn-light {
         right: 0;
     }
 }
+footer .accordion-item:last-child {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+footer .accordion-item:last-of-type .accordion-collapse {
+    border-bottom: 0;
+}
 footer .accordion-button {
     border: 1px solid rgba(255,255,255,.2);
 }
-footer .accordion-flush .accordion-item:last-of-type .accordion-button.collapsed {
-    border-bottom-width: 1px;
+footer .accordion-flush .accordion-button {
+    border-bottom: 0;
 }
 footer .accordion-button:after,
 footer .accordion-button:not(.collapsed):after {
