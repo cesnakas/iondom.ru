@@ -101,15 +101,15 @@
         </div>
 
         <!-- mobile -->
-        <div class="accordion accordion-flush " id="accordionFlushExample">
+        <div class="accordion accordion-flush d-lg-none" id="footerAccordion">
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h2 class="accordion-header" id="footer-headingOne">
+                    <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#footer-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         Услуги
                     </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-collapse collapse" id="footer-collapseOne" aria-labelledby="footer-headingOne" data-bs-parent="#footerAccordion">
                     <div class="accordion-body">
                         <div class="list-group list-group-flush">
                             <a class="list-group-item list-group-item-action" href="#">Услуга 1</a>
@@ -124,12 +124,12 @@
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <h2 class="accordion-header" id="footer-headingTwo">
+                    <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#footer-collapseTwo" aria-expanded="false" aria-controls="footer-collapseTwo">
                         Товары
                     </button>
                 </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-collapse collapse" id="footer-collapseTwo" aria-labelledby="footer-headingTwo" data-bs-parent="#footerAccordion">
                     <div class="accordion-body">
                         <div class="list-group list-group-flush">
                             <a class="list-group-item list-group-item-action" href="#">Группа товаров 1</a>
@@ -144,10 +144,12 @@
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Меню</button>
+                <h2 class="accordion-header" id="footer-headingThree">
+                    <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#footer-collapseThree" aria-expanded="false" aria-controls="footer-collapseThree">
+                        Меню
+                    </button>
                 </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-collapse collapse" id="footer-collapseThree" aria-labelledby="footer-headingThree" data-bs-parent="#footerAccordion">
                     <div class="accordion-body">
                         <?$APPLICATION->IncludeComponent(
                             "bitrix:menu",
@@ -166,6 +168,23 @@
                                 "USE_EXT" => "N"
                             )
                         );?>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="footer-headingFour">
+                    <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#footer-collapseFour" aria-expanded="false" aria-controls="footer-collapseFour">
+                        Наши контакты
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="footer-collapseFour" aria-labelledby="footer-headingFour" data-bs-parent="#footerAccordion">
+                    <div class="accordion-body">
+                        <div class="list-group list-group-flush fs-6">
+                            <a class="list-group-item list-group-item-action" href="#">+ 7 777 777 7777</a>
+                            <a class="list-group-item list-group-item-action" href="#">email@mail.ru</a>
+                            <a class="list-group-item list-group-item-action" href="#">г. Москва, ул. Антонова 27</a>
+                        </div>
                     </div>
                 </div>
             </div>
