@@ -1,3 +1,5 @@
+// navigation
+
 // swiper
 var swiper = new Swiper('#homeSlider .swiper-container', {
     loop: true,

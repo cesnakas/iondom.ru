@@ -32,7 +32,7 @@
     <header class="navbar navbar-expand-lg py-0 pt-lg-5 pb-lg-0 navbar-light bg-white" id="header">
         <div class="container">
 
-            <button class="navbar-toggler me-5" id="navbarMenuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler me-5 collapsed" id="navbarMenuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <svg width="24" height="17">
                     <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/icons.svg#menu-btn"/>
                 </svg>
