@@ -13,8 +13,8 @@ window.onscroll = function() {
 };
 */
 // main
-var navbarHeight = $('#header').outerHeight(true);
-$('main').css({'margin-top':navbarHeight});
+let navbarHeight = $('#header').outerHeight(true);
+$('main').css({'margin-top': navbarHeight});
 /*
 $(window).resize(function() {
     $('main').css({'margin-top': navbarHeight});
