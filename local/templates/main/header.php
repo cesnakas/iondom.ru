@@ -294,11 +294,11 @@
                         <div class="accordion-body px-1">
 
                             <div class="list-group list-group-flush">
-                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent active">The current link item</a>
-                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A second link item</a>
-                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A third link item</a>
-                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A fourth link item</a>
-                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent" tabindex="-1" aria-disabled="true">A disabled link item</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent active">Видеонаблюдение через интернет</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Беспроводное видеонаблюдение</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Уличное видеонаблюдение</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Видеонаблюдение на расстоянии</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Автономная система видеонаблюдения</a>
                             </div>
 
                         </div>
@@ -315,11 +315,12 @@
                         <div class="accordion-body px-1">
 
                             <div class="list-group list-group-flush">
-                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent active">The current link item</a>
-                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A second link item</a>
-                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A third link item</a>
-                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A fourth link item</a>
-                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent" tabindex="-1" aria-disabled="true">A disabled link item</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent active">Проектирование</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Установка и монтаж</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Настройка</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Сервисное обслуживание</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Комплексные услуги</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Сервис StartHelp</a>
                             </div>
 
                         </div>
