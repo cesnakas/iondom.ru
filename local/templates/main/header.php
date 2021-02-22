@@ -248,25 +248,85 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand d-none">
+    <nav class="col-lg-2 position-fixed top-0 strat-0 bottom-0 bg-primary text-white" id="leftNavbar">
         <div class="container">
-            <ul class="navbar-nav w-100 mx-auto justify-content-center" id="subMenu">
-                <li class="nav-item">
-                    <a class="nav-link text-reset" href="/about/howto/">Системы видеонаблюдения</a>
-                </li>
 
-                <li class="nav-item">
-                    <a class="nav-link text-reset" href="/security-systems/">СКУД Домофон Шлагбаум</a>
-                </li>
+            <div class="px-3 pt-5 pb-3">
+                <a href="<?=SITE_DIR?>">
+                    <svg width="120" height="53">
+                        <use xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/logo.svg#logo-fill"/>
+                    </svg>
+                </a>
+                <p>Видеонаблюдение</p>
+            </div>
 
-                <li class="nav-item">
-                    <a class="nav-link text-reset" href="/about/">Системы охранной сигнализации</a>
-                </li>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
 
-                <li class="nav-item">
-                    <a class="nav-link text-reset" href="/about/guaranty/">Системы пожарной безопасности</a>
-                </li>
-            </ul>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Типовые решения
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body px-1">
+
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent active">Для дома</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Для дачи</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">В коттедж</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Для квартиры</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">Для подъезда, лестницы</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">В лифт</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Системные особенности
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body px-1">
+
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent active">The current link item</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A second link item</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A third link item</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A fourth link item</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent" tabindex="-1" aria-disabled="true">A disabled link item</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Услуги и цены
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body px-1">
+
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent active">The current link item</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A second link item</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A third link item</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent">A fourth link item</a>
+                                <a href="#" class="list-group-item list-group-item-action text-white bg-transparent" tabindex="-1" aria-disabled="true">A disabled link item</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </nav>
 

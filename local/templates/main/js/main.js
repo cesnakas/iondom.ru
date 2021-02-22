@@ -21,6 +21,12 @@ $(window).resize(function() {
 });
 */
 
+// left navbar
+$('div.col.position-relative').css('display','none')
+$('header').addClass('offset-lg-2 col-lg-10');
+$('main').addClass('offset-lg-2 col-lg-10');
+$('footer').addClass('offset-lg-2 col-lg-10');
+
 // swiper
 var swiper = new Swiper('#homeSlider .swiper-container', {
     loop: true,
