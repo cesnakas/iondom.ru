@@ -110,7 +110,7 @@
                         "mobile-basket",
                         Array(
                             "HIDE_ON_BASKET_PAGES" => "N",
-                            "PATH_TO_BASKET" => SITE_DIR."personal/cart/",
+                            "PATH_TO_BASKET" => SITE_DIR."basket/",
                             "PATH_TO_ORDER" => SITE_DIR."personal/order/make/",
                             "PATH_TO_PERSONAL" => SITE_DIR."personal/",
                             "PATH_TO_PROFILE" => SITE_DIR."personal/",
