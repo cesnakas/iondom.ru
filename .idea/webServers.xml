@@ -2,17 +2,17 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="956efda6-38ec-4570-bf0e-cc60b0775124" name="iondom.tmweb.ru" url="https://iondom.tmweb.ru">
-        <fileTransfer host="iondom.tmweb.ru" port="21">
+      <webServer id="8d4fe9e7-0bb5-4ec2-8f14-d0d5b2e497a3" name="94.253.15.248" url="http://94.253.15.248">
+        <fileTransfer accessType="SFTP" host="94.253.15.248" port="22" sshConfigId="0536894b-9ae8-4a04-9837-9101490de013" sshConfig="ion@94.253.15.248:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="8d4fe9e7-0bb5-4ec2-8f14-d0d5b2e497a3" name="94.253.15.248" url="http://94.253.15.248">
-        <fileTransfer rootFolder="/home/bitrix/www" accessType="SFTP" host="94.253.15.248" port="22" sshConfigId="0536894b-9ae8-4a04-9837-9101490de013" sshConfig="root@94.253.15.248:22 password">
+      <webServer id="60a52b91-585f-42e9-9f76-8ca5144d7ec3" name="iondom.cesnakas.ru" url="https://iondom.cesnakas.ru">
+        <fileTransfer host="iondom.cesnakas.ru" port="21">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" showHiddenFiles="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
