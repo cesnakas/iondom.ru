@@ -1,4 +1,4 @@
-let navbarHeight = $('#header').outerHeight(true);
+let navbarHeight = $('#header').height(); // outerHeight(true);
 
 // Panel bitrix
 if ($('#bx-panel').length) {
@@ -6,6 +6,7 @@ if ($('#bx-panel').length) {
         'top':'auto',
         'z-index':'999',
     });
+    $('#leftNavbar').removeClass('top-0');
     $('#leftNavbar').css({'top': navbarHeight});
 };
 
@@ -13,13 +14,15 @@ if ($('#bx-panel').length) {
 $('main').css({'margin-top': navbarHeight});
 
 // left navbar
-$('div.col.position-relative').css('display','none');
-$('header').addClass('offset-lg-2 col-lg-10');
-$('main').addClass('offset-lg-2 col-lg-10');
-$('footer').addClass('offset-lg-2 col-lg-10');
+// if(window.location.href !== "/") {
+    $('div.col.position-relative').css('display', 'none');
+    //$('header').addClass('offset-lg-2 col-lg-10');
+    //$('main').addClass('offset-lg-2 col-lg-10');
+    //$('footer').addClass('offset-lg-2 col-lg-10');
+// };
 
 // swiper
-var swiper = new Swiper('#homeSlider .swiper-container', {
+let swiper = new Swiper('#homeSlider .swiper-container', {
     loop: true,
     autoplay: {
         delay: 5500,

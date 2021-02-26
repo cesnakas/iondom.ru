@@ -2,7 +2,7 @@
 
     </main>
 
-    <footer class="mt-5 py-5 bg-primary" role="contentinfo">
+    <footer class="mt-5 py-5 bg-primary <?if($APPLICATION->GetCurPage() != "/") {?>offset-lg-2 col-lg-10<?}?>" role="contentinfo">
         <div class="container">
 
             <div class="pb-4">
