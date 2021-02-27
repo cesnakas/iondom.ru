@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Умный дом",
-		"about/howto/", 
+		"catalog/",
 		Array(), 
 		Array(), 
 		"" 
@@ -16,28 +16,28 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Интернет",
-		"about/", 
+		"catalog/",
 		Array(), 
 		Array(), 
 		"" 
 	),	
 	Array(
 		"Акции и скидки",
-		"about/guaranty/", 
+		"catalog/",
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Услуги и цены",
-		"about/contacts/",
+		"catalog/",
 		Array(),
 		Array(),
 		""
 	),
     Array(
         "Контакты",
-        "about/contacts/",
+        "catalog/",
         Array(),
         Array(),
         ""
