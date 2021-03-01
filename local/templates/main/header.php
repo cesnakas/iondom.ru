@@ -29,7 +29,15 @@
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <body>
 
-    <header class="navbar navbar-expand-lg fixed-top py-0 pt-lg-5 pb-lg-0 navbar-light bg-white <?if(($APPLICATION->GetCurPage() != "/") && ($APPLICATION->GetCurPage() != "/catalog/")):?>offset-lg-2 col-lg-10<?endif;?>" id="header">
+    <? if(
+        ($APPLICATION->GetCurPage() != "/") &&
+        ($APPLICATION->GetCurPage() != "/catalog/") &&
+        ($APPLICATION->GetCurPage() != "/search/")
+    ): ?>
+    <header class="navbar navbar-expand-lg fixed-top py-0 pt-lg-5 pb-lg-0 navbar-light bg-white offset-lg-2 col-lg-10">
+    <? else: ?>
+    <header class="navbar navbar-expand-lg fixed-top py-0 pt-lg-5 pb-lg-0 navbar-light bg-white" id="header">
+    <? endif; ?>
         <div class="container">
 
             <div class="row row-cols-1 gx-0 w-100">
@@ -248,7 +256,11 @@
         </div>
     </header>
 
-    <? if(($APPLICATION->GetCurPage() != "/") && ($APPLICATION->GetCurPage() != "/catalog/")): ?>
+    <? if(
+        ($APPLICATION->GetCurPage() != "/") &&
+        ($APPLICATION->GetCurPage() != "/catalog/") &&
+        ($APPLICATION->GetCurPage() != "/search/")
+    ): ?>
     <nav class="col-lg-2 position-fixed top-0 strat-0 bottom-0 bg-primary text-white" id="leftNavbar">
         <div class="container">
 
@@ -333,4 +345,12 @@
     </nav>
     <? endif; ?>
 
-    <main class="min-vh-100 <?if(($APPLICATION->GetCurPage() != "/") && ($APPLICATION->GetCurPage() != "/catalog/")):?>offset-lg-2 col-lg-10<?endif;?>">
+    <? if(
+        ($APPLICATION->GetCurPage() != "/") &&
+        ($APPLICATION->GetCurPage() != "/catalog/") &&
+        ($APPLICATION->GetCurPage() != "/search/")
+    ): ?>
+    <main class="min-vh-100 offset-lg-2 col-lg-10">
+    <? else: ?>
+    <main class="min-vh-100">
+    <? endif; ?>
