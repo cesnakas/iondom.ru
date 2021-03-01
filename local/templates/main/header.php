@@ -29,15 +29,7 @@
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <body>
 
-    <? if(
-        ($APPLICATION->GetCurPage() != "/") &&
-        ($APPLICATION->GetCurPage() != "/catalog/") &&
-        ($APPLICATION->GetCurPage() != "/search/")
-    ): ?>
-    <header class="navbar navbar-expand-lg fixed-top py-0 pt-lg-5 pb-lg-0 navbar-light bg-white offset-lg-2 col-lg-10">
-    <? else: ?>
     <header class="navbar navbar-expand-lg fixed-top py-0 pt-lg-5 pb-lg-0 navbar-light bg-white" id="header">
-    <? endif; ?>
         <div class="container">
 
             <div class="row row-cols-1 gx-0 w-100">
@@ -256,12 +248,12 @@
         </div>
     </header>
 
-    <? if(
+    <?/* if(
         ($APPLICATION->GetCurPage() != "/") &&
         ($APPLICATION->GetCurPage() != "/catalog/") &&
         ($APPLICATION->GetCurPage() != "/search/")
-    ): ?>
-    <nav class="col-lg-2 position-fixed top-0 strat-0 bottom-0 bg-primary text-white" id="leftNavbar">
+    ): */?>
+    <nav class="position-fixed top-0 strat-0 bottom-0 bg-primary text-white" id="leftNavbar">
         <div class="container">
 
             <div class="px-3 pt-5 pb-3">
@@ -343,14 +335,6 @@
             </div>
         </div>
     </nav>
-    <? endif; ?>
+    <?/* endif; */?>
 
-    <? if(
-        ($APPLICATION->GetCurPage() != "/") &&
-        ($APPLICATION->GetCurPage() != "/catalog/") &&
-        ($APPLICATION->GetCurPage() != "/search/")
-    ): ?>
-    <main class="min-vh-100 offset-lg-2 col-lg-10">
-    <? else: ?>
     <main class="min-vh-100">
-    <? endif; ?>

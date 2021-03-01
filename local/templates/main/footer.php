@@ -2,15 +2,7 @@
 
     </main>
 
-    <? if(
-        ($APPLICATION->GetCurPage() != "/") &&
-        ($APPLICATION->GetCurPage() != "/catalog/") &&
-        ($APPLICATION->GetCurPage() != "/search/")
-    ): ?>
-    <footer class="mt-5 py-5 bg-primary offset-lg-2 col-lg-10" role="contentinfo">
-    <? else: ?>
     <footer class="mt-5 py-5 bg-primary" role="contentinfo">
-    <? endif; ?>
         <div class="container">
 
             <div class="pb-4">
