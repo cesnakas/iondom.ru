@@ -253,7 +253,7 @@
         ($APPLICATION->GetCurPage() != "/catalog/") &&
         ($APPLICATION->GetCurPage() != "/search/")
     ): */?>
-    <nav class="position-fixed top-0 strat-0 bottom-0 bg-primary text-white" id="leftNavbar">
+    <nav class="fixed-top bottom-0 bg-primary text-white" id="leftNavbar">
         <div class="container">
 
             <div class="px-3 pt-5 pb-3">

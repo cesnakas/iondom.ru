@@ -100,7 +100,7 @@ body {
 
 /* left navbar */
 #leftNavbar {
-    z-index: 9999;
+    z-index: 990;
 }
 #leftNavbar .accordion-button {
     border-color: transparent;

@@ -6,8 +6,8 @@ if ($('#bx-panel').length) {
         'top':'auto',
         'z-index':'999',
     });
-    $('#leftNavbar').removeClass('top-0');
-    $('#leftNavbar').css({'top': navbarHeight});
+    $('#leftNavbar').css({'top':'auto'});
+    // $('#leftNavbar').css({'top': navbarHeight});
 };
 
 // main
